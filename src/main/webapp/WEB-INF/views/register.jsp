@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Spring Boot</title>
+</head>
+</head>
+<body>
+  <h1>Spring Boot - MVC web application example</h1>
+
+<form:form method="post" modelAttribute="person">
+	<form:input path="firstName" />
+	<form:input path="lastName" />
+	<input type="submit" value="Save">
+</form:form>
+
+</body>
+</html>
